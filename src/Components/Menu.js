@@ -6,10 +6,10 @@ const Menu = (props) => {
 
     return (
       <div className="colorOptions">
-        <Color color = "yellow" handleClick ={props.handle}></Color>
-        <Color color = "pink" handleClick ={props.handle}></Color>
-        <Color color = "blue" handleClick ={props.handle}></Color>
-        <Color color = "purple" handleClick ={props.handle}></Color>
+        <Color color = "yellow" handleClick ={props.newBlock}></Color>
+        <Color color = "pink" handleClick ={props.newBlock}></Color>
+        <Color color = "blue" handleClick ={props.newBlock}></Color>
+        <Color color = "purple" handleClick ={props.newBlock}></Color>
           
       </div>
     );

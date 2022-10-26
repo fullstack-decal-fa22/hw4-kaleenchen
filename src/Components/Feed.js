@@ -8,12 +8,13 @@ const Feed = () => {
     // Refer to Hint 2 for more help!
     const [block, updatedBlock] = useState([]);
 
-    const newBlock = (color) => {
-        updatedBlock(block =>[<Block color = {color}></Block>, block])
-    }
+
     /* Use the map() function to render multiple Blocks! */
     const posts = block.map(((block) => <Block color = {block}></Block>)); // TODO: edit this variable
 
+    const newBlock = (color) => {
+        updatedBlock(posts =>[<Block color = {color}></Block>, block])
+    }
     return (
         <div>
             <Menu newBlock = {newBlock}></Menu>
